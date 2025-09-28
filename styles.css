@@ -247,31 +247,48 @@ nav #right a:hover {
             width: 300px;
         }
     }
-    @media (max-width: 600px){
-        /*nav bar*/
-        nav{
-            padding: 0 20px;
-
-        }
-        nav #right a{
-            font-size: 22px;
-        }
-        nav #right a span{
-            display: none;
-
-        }
-        .hero-section{
-            padding: 0 20px;
-        }
-        .hero-section .text h1{
-            font-size: 30px;
-        }
-        .skills{
-            padding: 0 20px;
-        }
-        .skills .cells .cell span{
-            font-size:8px;
-        }
+/* === Mobile Styling === */
+@media (max-width: 600px) {
+    /* Hero section adjustments */
+    .hero-section {
+        padding: 0 20px;
+        flex-direction: column-reverse;
+        gap: 20px;
     }
+    .hero-section .headshot img {
+        width: 300px;
+    }
+    .hero-section .text h1 {
+        font-size: 30px;
+    }
+
+    /* Skills section alignment */
+    .skills {
+        padding: 0 20px; /* match hero-section */
+        margin-top: 50px; /* optional spacing */
+    }
+    .skills .cells .cell span {
+        font-size: 12px; /* adjust for small screen */
+    }
+
+    /* About section alignment */
+    .about {
+        padding: 0 20px; /* match hero-section */
+    }
+    .about .text {
+        max-width: 100%; /* allow full width within padding */
+    }
+
+    /* Navbar */
+    nav {
+        padding: 0 20px;
+    }
+    nav #right a {
+        font-size: 22px;
+    }
+    nav #right a span {
+        display: none;
+    }
+}
 
 
