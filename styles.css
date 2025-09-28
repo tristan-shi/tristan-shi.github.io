@@ -36,11 +36,18 @@ nav{
 nav #right {
     position:fixed;
     display: flex;
-    gap:20px;
+    gap: 1rem;
+}
+nav#right a{
+    gap:0.3rem;
 }
 nav #right a:hover {
     color: var(--text-color);
     transition: 0.3s;
+}
+nav #right a:not(:last-child)::after {
+    content: "/";
+    margin-left: 1rem;
 }
 
 .hero-section{
